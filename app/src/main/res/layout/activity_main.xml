@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context="com.example.rahul.myotpgeneration.SignupVerificationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/otp_header"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/verification_code"
+        android:padding="20dp"
+        android:textColorHint="@color/hint_color"
+        android:textColor="@color/divider_color"
+        android:textSize="20sp"
+        android:background="@drawable/custom_edit_text_layout"
+        android:id="@+id/signup_verification_digits"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:id="@+id/signup_verification_Submit_button"
+        android:text="@string/finish_text"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+</LinearLayout>

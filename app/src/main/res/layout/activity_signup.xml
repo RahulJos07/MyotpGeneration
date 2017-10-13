@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context="com.example.rahul.myotpgeneration.SignupActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"/>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/phone_image"
+        android:layout_gravity="center"
+        android:contentDescription="@string/phone_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/enter_username"
+            android:textColorHint="@color/hint_color"
+            android:textSize="20sp"
+            android:textColor="@color/divider_color"
+            android:padding="15dp"
+            android:id="@+id/signup_username"
+            android:background="@drawable/custom_edit_text_layout"
+            android:inputType="text"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:id="@+id/signup_number_header"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="@string/text_91"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/enter_phone_number"
+            android:textColorHint="@color/hint_color"
+            android:textSize="20sp"
+            android:textColor="@color/divider_color"
+            android:padding="15dp"
+            android:id="@+id/signup_number_digits"
+            android:background="@drawable/custom_edit_text_layout"
+            android:inputType="phone"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@android:color/black"
+            android:id="@+id/signup_terms_condition_checkbox"
+            android:text="@string/i_agree_to_all"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_and_condition"
+            android:textColor="@color/black"
+            android:id="@+id/terms_and_condition_onclick"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/signup_Submit_button"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/continue_text" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#055ca5</color>
+    <color name="colorPrimaryDark">#075ea7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="divider_color">#888888</color>
+
+    <color name="inactive_dot">#bbbbbb</color>
+    <color name="active_dot">#055ca5</color>
+    <color name="black">#000000</color>
+    <color name="medium_grey">#666666</color>
+    <color name="hint_color">#bbbbbb</color>
+</resources>
